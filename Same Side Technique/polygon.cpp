@@ -124,7 +124,7 @@ void keyboardFunction(GLubyte key, GLint xMouse, GLint yMouse)
 
 void initFunction(void)
 {
-    glClearColor(0.0f, 0.5f, 0.5f, 0.0); // arka plan rengi
+    glClearColor(0.0f, 0.5f, 0.5f, 0.0);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     gluOrtho2D(0.0, GLdouble(winWidth), 0.0, GLdouble(winHeight));
