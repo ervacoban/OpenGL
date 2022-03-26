@@ -1,2 +1,2 @@
 # OpenGL
-Some of my OpenGL stuff for "Computer Graphics" class
+Some of my OpenGL work for "Computer Graphics" class
