@@ -1,22 +1,17 @@
 ﻿#include <tchar.h>
 #include <glut.h>
 
-const int p1[] = { 100, 135 }, p2[] = { 35, 35 }, p3[] = { 165, 35 }, p4[] = { 25, 100 }, p5[] = { 175, 100 };
+const int p1[] = { 35, 35 }, p2[] = { 100, 135 }, p3[] = { 165, 35 }, p4[] = { 25, 100 }, p5[] = { 175, 100 };
 
 void lineSegment(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT);
-	glBegin(GL_LINES);
 	glColor3f(1.0f, 0.0f, 0.0f);
+	glBegin(GL_LINE_LOOP);
 	glVertex2iv(p1);
 	glVertex2iv(p2);
-	glVertex2iv(p1);
 	glVertex2iv(p3);
 	glVertex2iv(p4);
-	glVertex2iv(p3);
-	glVertex2iv(p4);
-	glVertex2iv(p5);
-	glVertex2iv(p2);
 	glVertex2iv(p5);
 	glEnd();
 	glFlush();
